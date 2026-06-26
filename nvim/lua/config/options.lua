@@ -1,0 +1,20 @@
+local opt = vim.opt
+
+opt.termguicolors = true
+opt.number = true
+opt.relativenumber = true
+opt.expandtab = true
+opt.shiftwidth = 4
+opt.tabstop = 4
+opt.smartindent = true
+opt.wrap = false
+opt.ignorecase = true
+opt.smartcase = true
+opt.hlsearch = true
+opt.incsearch = true
+opt.mouse = "a"
+opt.signcolumn = "yes"
+opt.updatetime = 250
+opt.splitbelow = true
+opt.splitright = true
+opt.background = "dark"

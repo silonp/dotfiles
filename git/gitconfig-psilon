@@ -1,0 +1,41 @@
+[user]
+    name = Peter Šilon
+    email = peter.silon.ext@wayve.ai
+
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+    showbranch = auto
+    ui = true
+    filemode = false
+
+[alias]
+    ci = commit
+    co = checkout
+    lg = log --color \
+             --graph \
+             --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue) (%an)%Creset' \
+             --abbrev-commit
+    df = diff
+    st = status
+
+[core]
+    editor = nvim
+
+[push]
+    ; Use current branch name if none given for push.
+    default = current
+
+[diff]
+    tool = nvimdiff
+
+[difftool]
+    prompt = false
+
+[merge]
+    tool = nvimdiff
+
+[mergetool]
+    prompt = false
+    keepBackup = false

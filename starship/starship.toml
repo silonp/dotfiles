@@ -1,0 +1,61 @@
+"$schema" = "https://starship.rs/config/schema.json"
+
+add_newline = false
+command_timeout = 500
+
+format = """
+$directory\
+$git_branch\
+$git_status\
+$python\
+$cpp\
+$nodejs\
+$docker_context\
+$cmd_duration
+$line_break\
+$character"""
+
+[character]
+success_symbol = "[❯](bold #b8bb26)"
+error_symbol = "[❯](bold #fb4934)"
+vimcmd_symbol = "[❯](bold #83a598)"
+
+[directory]
+style = "bold #83a598"
+truncation_length = 3
+truncate_to_repo = true
+read_only = "  "
+read_only_style = "bold #fb4934"
+
+[git_branch]
+symbol = " "
+style = "bold #b8bb26"
+
+[git_status]
+style = "bold #fabd2f"
+format = "([\\[$all_status$ahead_behind\\]]($style) )"
+
+[cmd_duration]
+min_time = 2_000
+style = "bold #928374"
+format = "took [$duration]($style) "
+
+[python]
+symbol = " "
+style = "bold #fabd2f"
+format = "via [$symbol($version )]($style)"
+
+[cpp]
+symbol = " "
+style = "bold #fb4934"
+format = "via [$symbol($version )]($style)"
+
+[nodejs]
+symbol = " "
+style = "bold #b8bb26"
+format = "via [$symbol($version )]($style)"
+
+[docker_context]
+symbol = " "
+style = "bold #83a598"
+format = "via [$symbol$context]($style) "
