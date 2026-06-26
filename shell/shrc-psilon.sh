@@ -1,13 +1,19 @@
-#
+# Include the local bin directory in the PATH.
+if [ -d "${HOME}/.local/bin" ]; then
+    case ":${PATH}:" in
+        *":${HOME}/.local/bin:"*) ;;
+        *) export PATH="${HOME}/.local/bin:${PATH}" ;;
+    esac
+fi
+
+# Aliases.
 alias ..="cd .."
 alias ...="cd ../.."
 
-#
 alias ls="eza"
 alias ll="eza -lah"
 alias tree="eza --tree"
 
-#
 alias vim='nvim'
 
 # Get the directory of this script.
