@@ -28,7 +28,8 @@ read_only = "  "
 read_only_style = "bold #fb4934"
 
 [git_branch]
-symbol = " "
+symbol = ""
+format = "on [$branch]($style) "
 style = "bold #b8bb26"
 
 [git_status]
