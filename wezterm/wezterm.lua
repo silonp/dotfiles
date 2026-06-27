@@ -33,5 +33,7 @@ return {
         { key = "End", mods = "CTRL", action = act.ScrollToBottom },
         { key = "Home", mods = "NONE", action = act.SendString("\x01") },
         { key = "End", mods = "NONE", action = act.SendString("\x05") },
+        { key = "PageUp", mods = "NONE", action = act.ScrollByPage(-1) },
+        { key = "PageDown", mods = "NONE", action = act.ScrollByPage(1) },
     },
 }

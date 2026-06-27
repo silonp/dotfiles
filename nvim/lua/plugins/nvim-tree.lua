@@ -9,7 +9,16 @@ return {
             { "<leader>e", "<cmd>NvimTreeToggle<cr>", desc = "Toggle file tree" },
         },
         config = function()
-            require("nvim-tree").setup({})
+            require("nvim-tree").setup({
+                actions = {
+                    open_file = {
+                        quit_on_open = true,
+                        window_picker = {
+                            enable = false,
+                        },
+                    },
+                },
+            })
         end,
     },
 }

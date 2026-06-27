@@ -62,6 +62,7 @@ link_path() {
     log_ok "Linked $dest → $src"
 }
 
+# Append a line to a file if it is not already present.
 ensure_line() {
     local file="$1"
     local line="$2"
@@ -75,6 +76,9 @@ ensure_line() {
     fi
 }
 
+# Set up git config: symlink gitconfig-psilon when ~/.gitconfig is missing,
+# otherwise append an [include] block to the existing file. Writes directly
+# to ~/.gitconfig (not via git config) to avoid circular includes.
 install_git() {
     local gitconfig="${HOME}/.gitconfig"
 
