@@ -1,4 +1,5 @@
 local wezterm = require 'wezterm'
+local act = wezterm.action
 
 return {
     font = wezterm.font("JetBrainsMono Nerd Font"),
@@ -25,4 +26,12 @@ return {
 
     native_macos_fullscreen_mode = true,
     window_close_confirmation = "NeverPrompt",
+
+    -- macOS WezTerm uses Home/End for scrollback by default; send line start/end instead.
+    keys = {
+        { key = "Home", mods = "CTRL", action = act.ScrollToTop },
+        { key = "End", mods = "CTRL", action = act.ScrollToBottom },
+        { key = "Home", mods = "NONE", action = act.SendString("\x01") },
+        { key = "End", mods = "NONE", action = act.SendString("\x05") },
+    },
 }
