@@ -1,8 +1,10 @@
 # Include the local bin directory in the PATH.
 if [ -d "${HOME}/.local/bin" ]; then
     case ":${PATH}:" in
-        *":${HOME}/.local/bin:"*) ;;
-        *) export PATH="${HOME}/.local/bin:${PATH}" ;;
+        *":${HOME}/.local/bin:"*)
+        ;;
+        *) export PATH="${HOME}/.local/bin:${PATH}"
+        ;;
     esac
 fi
 
@@ -22,6 +24,7 @@ if [ -n "${BASH_VERSION:-}" ]; then
 else
     _shrc_dir="$(cd "$(dirname "${(%):-%x}")" && pwd)"
 fi
+
 # Source the tmux.sh file.
 if [ -f "${_shrc_dir}/../tmux/tmux.sh" ]; then
     source "${_shrc_dir}/../tmux/tmux.sh"

@@ -18,7 +18,7 @@ return {
         bottom = 10,
     },
 
-    window_decorations = "INTEGRATED_BUTTONS | RESIZE",
+    window_decorations = "RESIZE",
     adjust_window_size_when_changing_font_size = false,
     animation_fps = 120,
     max_fps = 120,
