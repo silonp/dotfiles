@@ -12,7 +12,6 @@ main() {
 
     install_common_links
     link_path "${DOTFILES_DIR}/wezterm/wezterm.lua" "${HOME}/.wezterm.lua"
-
     install_git
     install_shell
     finish_install
