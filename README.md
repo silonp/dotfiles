@@ -3,6 +3,7 @@
 Personal config for:
 
 - **Neovim** — editor
+- **Cursor** — AI code editor (macOS)
 - **tmux** — terminal multiplexer
 - **Starship** — shell prompt
 - **Git** — version control

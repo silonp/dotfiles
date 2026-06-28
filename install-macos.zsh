@@ -13,6 +13,7 @@ main() {
     install_common_links
     link_path "${DOTFILES_DIR}/wezterm/wezterm.lua" "${HOME}/.wezterm.lua"
     link_path "${DOTFILES_DIR}/aerospace/.aerospace.toml" "${HOME}/.aerospace.toml"
+    link_path "${DOTFILES_DIR}/cursor/settings.json" "${HOME}/Library/Application Support/Cursor/User/settings.json"
     install_git
     install_shell
     finish_install

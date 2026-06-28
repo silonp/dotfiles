@@ -1,0 +1,21 @@
+{
+    "window.autoDetectColorScheme": true,"remote.SSH.remotePlatform": {
+        "coder-vscode.coder.aks-prod-coder-swedencentral.azr.wayve.ai--petersilonext--p-silon-dev.workspace": "linux"
+    },
+    "remote.SSH.connectTimeout": 1800,
+    "remote.SSH.reconnectionGraceTime": 28800,
+    "remote.SSH.maxReconnectionAttempts": null,
+    "remote.SSH.serverShutdownTimeout": 28800,
+    "editor.fontFamily": "JetBrainsMono Nerd Font",
+    "workbench.settings.applyToAllProfiles": [
+        "editor.fontFamily"
+    ],
+    "editor.fontSize": 13,
+    "workbench.preferredLightColorTheme": "Gruvbox Dark Medium",
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "vscode-neovim.statusLineItems": [
+        "mode"
+    ]
+}
