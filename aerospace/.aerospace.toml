@@ -1,0 +1,57 @@
+start-at-login = true
+
+# Move mouse cursor to the focused window.
+on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
+on-focus-changed = ['move-mouse window-lazy-center']
+
+[gaps]
+
+inner.horizontal = 8
+inner.vertical = 8
+outer.left = 8
+outer.right = 8
+outer.top = 8
+outer.bottom = 8
+
+[mode.main.binding]
+
+# Focus windows.
+alt-left = "focus left"
+alt-down = "focus down"
+alt-up = "focus up"
+alt-right = "focus right"
+
+# Move windows.
+alt-shift-left = "move left"
+alt-shift-down = "move down"
+alt-shift-up = "move up"
+alt-shift-right = "move right"
+
+# Loop workspaces.
+ctrl-alt-left = "workspace prev"
+ctrl-alt-right = "workspace next"
+
+# Resize windows.
+alt-minus = "resize smart -50"
+alt-equal = "resize smart +50"
+
+# Layouts.
+alt-slash = "layout tiles horizontal vertical"
+alt-comma = "layout accordion horizontal vertical"
+
+# Fullscreen.
+alt-f = "fullscreen"
+
+# Workspaces.
+alt-1 = "workspace 1"
+alt-2 = "workspace 2"
+alt-3 = "workspace 3"
+alt-4 = "workspace 4"
+alt-5 = "workspace 5"
+
+# Move window to workspace and focus.
+alt-shift-1 = "move-node-to-workspace --focus-follows-window 1"
+alt-shift-2 = "move-node-to-workspace --focus-follows-window 2"
+alt-shift-3 = "move-node-to-workspace --focus-follows-window 3"
+alt-shift-4 = "move-node-to-workspace --focus-follows-window 4"
+alt-shift-5 = "move-node-to-workspace --focus-follows-window 5"

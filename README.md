@@ -8,3 +8,4 @@ Personal config for:
 - **Git** — version control
 - **Zsh / Bash** — shell aliases and shared setup
 - **Wezterm** — terminal emulator (macOS)
+- **AeroSpace** — tiling window manager (macOS)
