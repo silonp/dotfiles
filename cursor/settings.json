@@ -11,6 +11,7 @@
         "editor.fontFamily"
     ],
     "editor.fontSize": 13,
+    "editor.lineNumbers": "relative",
     "workbench.preferredLightColorTheme": "Gruvbox Dark Medium",
     "extensions.experimental.affinity": {
         "asvetliakov.vscode-neovim": 1
