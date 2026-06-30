@@ -46,12 +46,38 @@ alt-f = "fullscreen"
 alt-1 = "workspace 1"
 alt-2 = "workspace 2"
 alt-3 = "workspace 3"
-alt-4 = "workspace 4"
-alt-5 = "workspace 5"
+alt-n = "workspace N"
+alt-s = "workspace S"
+alt-t = "workspace T"
+alt-c = "workspace C"
+alt-b = "workspace B"
 
 # Move window to workspace and focus.
 alt-shift-1 = "move-node-to-workspace --focus-follows-window 1"
 alt-shift-2 = "move-node-to-workspace --focus-follows-window 2"
 alt-shift-3 = "move-node-to-workspace --focus-follows-window 3"
-alt-shift-4 = "move-node-to-workspace --focus-follows-window 4"
-alt-shift-5 = "move-node-to-workspace --focus-follows-window 5"
+alt-shift-n = "move-node-to-workspace --focus-follows-window N"
+alt-shift-s = "move-node-to-workspace --focus-follows-window S"
+alt-shift-t = "move-node-to-workspace --focus-follows-window T"
+alt-shift-c = "move-node-to-workspace --focus-follows-window C"
+alt-shift-b = "move-node-to-workspace --focus-follows-window B"
+
+[[on-window-detected]]
+if.app-id = "notion.id"
+run = "move-node-to-workspace N"
+
+[[on-window-detected]]
+if.app-id = "com.tinyspeck.slackmacgap"
+run = "move-node-to-workspace S"
+
+[[on-window-detected]]
+if.app-id = "com.github.wez.wezterm"
+run = "move-node-to-workspace T"
+
+[[on-window-detected]]
+if.app-id = "com.todesktop.230313mzl4w4u92"
+run = "move-node-to-workspace C"
+
+[[on-window-detected]]
+if.app-id = "com.google.Chrome"
+run = "move-node-to-workspace B"
