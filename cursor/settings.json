@@ -1,6 +1,10 @@
 {
-    "window.autoDetectColorScheme": true,"remote.SSH.remotePlatform": {
+    "window.autoDetectColorScheme": true,
+    "remote.SSH.remotePlatform": {
         "coder-vscode.coder.aks-prod-coder-swedencentral.azr.wayve.ai--petersilonext--p-silon-dev.workspace": "linux"
+    },
+    "remote.SSH.serverInstallPath": {
+        "coder-vscode.coder.aks-prod-coder-swedencentral.azr.wayve.ai--petersilonext--p-silon-dev.workspace": "/workspace"
     },
     "remote.SSH.connectTimeout": 1800,
     "remote.SSH.reconnectionGraceTime": 28800,
