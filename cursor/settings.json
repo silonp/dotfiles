@@ -16,6 +16,7 @@
     ],
     "editor.fontSize": 13,
     "editor.lineNumbers": "relative",
+    "editor.hover.enabled": false,
     "workbench.preferredLightColorTheme": "Gruvbox Dark Medium",
     "extensions.experimental.affinity": {
         "asvetliakov.vscode-neovim": 1
