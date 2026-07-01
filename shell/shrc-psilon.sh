@@ -17,6 +17,7 @@ alias ll="eza -lah"
 alias tree="eza --tree"
 
 alias vim='nvim'
+alias gti='git'
 
 # Get the directory of this script.
 if [ -n "${BASH_VERSION:-}" ]; then
@@ -29,3 +30,4 @@ fi
 if [ -f "${_shrc_dir}/../tmux/tmux.sh" ]; then
     source "${_shrc_dir}/../tmux/tmux.sh"
 fi
+
